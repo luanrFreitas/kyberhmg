@@ -1,0 +1,100 @@
+body, 
+.menu,
+.sub-menu {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after{
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.menu,
+.sub-menu {
+  list-style: none;
+  background: #000;
+}
+.sub-menu {
+  background: #444;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.menu li {
+  position: relative;
+}
+.menu > li {
+  float: left;
+}
+.menu > li:hover {
+  background: #444;
+}
+.menu li:hover > .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+}
+
+.sub-menu li:hover {
+  background: #555;
+}
+
+.sub-menu .sub-menu {
+  top: 0;
+  left: 100%;
+}
+
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
