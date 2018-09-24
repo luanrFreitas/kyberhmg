@@ -5,10 +5,10 @@ ini_set('max_input_vars', '2000');
 
 header('Content-Type: text/html; charset=utf-8');
 
-define( 'MYSQL_HOST', 		'mysql.hostinger.com.br' );
-define( 'MYSQL_USER', 		'u131353501_swgoh' );
-define( 'MYSQL_PASSWORD', 	'swgoh21' );
-define( 'MYSQL_DB_NAME', 	'u131353501_swgoh' );
+define( 'MYSQL_HOST', 		'db4free.net' );
+define( 'MYSQL_USER', 		'kyberhmg' );
+define( 'MYSQL_PASSWORD', 	'kyberhmg1' );
+define( 'MYSQL_DB_NAME', 	'kyberhmg' );
 
 /*
 define( 'MYSQL_HOST', 		'localhost' );
